@@ -1,0 +1,59 @@
+/* setup */
+
+html
+{
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+*, *::before, *::after
+{
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* headers */
+
+.site-header
+{
+    border-block-end: 2px solid #333;
+    padding: 10px;
+    background-color: #64552b;
+}
+
+.site-title
+{
+    font-family: 'Red Rose', cursive;
+    font-size: 1.5rem;
+
+    letter-spacing: 2px;
+}
+
+/* navbar */
+
+.navbar
+{
+    list-style-type: none;
+    border-bottom: 1px solid #333;
+    background-color: #817143;
+    font-size: 0.9rem;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+.navbar li
+{
+    border: 1px solid black;
+    float: left;
+    
+}
+
+.navbar li a
+{
+    display: block;
+    padding: 14px;
+}
+
