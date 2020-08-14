@@ -8,14 +8,14 @@ html
 
 *, *::before, *::after
 {
-    box-sizing: inherit;
     margin: 0px;
+    box-sizing: inherit;
     padding: 0px;
 }
 
 .site-flex {
-    display: flex;
     flex-direction: column;
+    display: flex;
     height: 100vh;
 }
 
@@ -24,29 +24,25 @@ html
 }
 
 .site-flex > .homepage-main {
-    background-color: #918a75;
     flex: 1;
-
-    display: flex;
     flex-direction: column;
+    display: flex;    
+    background-color: #918a75;
+    
 }
 
-
-.homepage-main > * { 
-    flex: 0;
-}
 
 /* headers */
 
 .site-header {
 
-    padding: 10px;
     border-block-end: 2px solid #333;
+    padding: 10px;
+    
     background-color: #64552b;
 
     font-family: 'Red Rose', cursive;
     font-size: 4rem;
-    
     letter-spacing: 2px;
 }
 
@@ -56,33 +52,38 @@ html
 
 .navbar
 {
-    list-style-type: none;
+    overflow: hidden;
+
+    margin: 0px;
     border-bottom: 1px solid #333;
+    padding: 0px;
+
     background-color: #817143;
     font-size: 1.8rem;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+        
+    list-style-type: none;
 
 }
 
 .navbar li
 {
+    float: left;  
     border-left: 1px solid black;
     border-right: 1px solid black;
-    float: left;   
+     
 }
 
 
 .navbar li a
 {
     display: block;
+    
     padding: 1em 2em;
 
     text-align: center;
     text-decoration: none;
+    
     outline: none;
-
     color: black;
 }
 
@@ -90,26 +91,29 @@ html
 /* popular posts */
 
 .popular-posts-header {
-    height: 25%;
+    flex: 0 25%;
     border: 1px solid black;
 }
 
 .popular-posts {  
-    border: 1px solid black;
     flex: 1;
 
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+
+    display: flex;
+
+    border: 1px solid black; 
 }
 
 .popular-posts > section {
+    flex: 0 28%;
+
     border: 1px solid black;
-    background-color: gainsboro;
     height: 45%;
 
-    flex: 0 28%;
+    background-color: gainsboro;
 }
 
 
