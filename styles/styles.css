@@ -23,17 +23,30 @@ html
     flex: 0;
 }
 
+.site-flex > .homepage-main {
+    background-color: #918a75;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.homepage-main > * { 
+    flex: 0;
+}
+
 /* headers */
 
-.site-header
-{
+.site-header {
+
     padding: 10px;
     border-block-end: 2px solid #333;
     background-color: #64552b;
 
     font-family: 'Red Rose', cursive;
     font-size: 4rem;
-
+    
     letter-spacing: 2px;
 }
 
@@ -76,7 +89,29 @@ html
 
 /* popular posts */
 
-main.popular-posts {
-    background-color: #918a75;
-    flex: 1;
+.popular-posts-header {
+    height: 25%;
+    border: 1px solid black;
 }
+
+.popular-posts {  
+    border: 1px solid black;
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.popular-posts > section {
+    border: 1px solid black;
+    background-color: gainsboro;
+    height: 45%;
+
+    flex: 0 28%;
+}
+
+
+
+
