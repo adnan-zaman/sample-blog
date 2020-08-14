@@ -102,8 +102,6 @@ html
     font-size: 1.5rem;   
 }
 
-
-
 .popular-posts {  
     flex: 1;
 
@@ -121,6 +119,21 @@ html
     height: 45%;
 
     background-color: gainsboro;
+}
+
+.popular-posts > section:hover {
+    animation: expand 1s forwards;
+    background-color: rgb(212, 143, 143);
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+  
 }
 
 
