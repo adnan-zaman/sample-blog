@@ -3,7 +3,7 @@
 html
 {
     box-sizing: border-box;
-    font-size: 24px;
+    font-size: 10px;
 }
 
 *, *::before, *::after
@@ -13,22 +13,31 @@ html
     padding: 0px;
 }
 
+.site-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.site-flex > * { 
+    flex: 0;
+}
+
 /* headers */
 
 .site-header
 {
-    border-block-end: 2px solid #333;
     padding: 10px;
+    border-block-end: 2px solid #333;
     background-color: #64552b;
-}
 
-.site-title
-{
     font-family: 'Red Rose', cursive;
-    font-size: 1.5rem;
+    font-size: 4rem;
 
     letter-spacing: 2px;
 }
+
+
 
 /* navbar */
 
@@ -37,7 +46,7 @@ html
     list-style-type: none;
     border-bottom: 1px solid #333;
     background-color: #817143;
-    font-size: 0.9rem;
+    font-size: 1.8rem;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -46,14 +55,28 @@ html
 
 .navbar li
 {
-    border: 1px solid black;
-    float: left;
-    
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    float: left;   
 }
+
 
 .navbar li a
 {
     display: block;
-    padding: 14px;
+    padding: 1em 2em;
+
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    color: black;
 }
 
+
+/* popular posts */
+
+main.popular-posts {
+    background-color: #918a75;
+    flex: 1;
+}
