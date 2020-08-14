@@ -91,9 +91,18 @@ html
 /* popular posts */
 
 .popular-posts-header {
-    flex: 0 25%;
-    border: 1px solid black;
+    flex: 0 15%;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    display: flex;
+
+    padding-left: 5%;
+    font-size: 1.5rem;   
 }
+
+
 
 .popular-posts {  
     flex: 1;
@@ -103,8 +112,6 @@ html
     justify-content: space-around;
 
     display: flex;
-
-    border: 1px solid black; 
 }
 
 .popular-posts > section {
